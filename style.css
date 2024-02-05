@@ -217,6 +217,7 @@ footer {
 
 .product {
     background-color: #dcd3d3;
+    flex: 0 0 auto;
     text-align: center;
     width: 40vmin;
     margin: 0 0.635rem;
@@ -295,9 +296,7 @@ footer {
     color: #001F3F;
 }
 
-.product-cart i:hover {
-    box-shadow: 0 0 1rem rgb(36, 98, 165);
-}
+
 
 .product-price,
 .section-2_product_price {
@@ -369,6 +368,9 @@ footer {
     .slide2,.slide3{
         object-position: top;
     } 
+    .product-name,.section-2_product_name{
+        font-size: 1rem;
+    }
    
 }
 
@@ -415,6 +417,11 @@ footer {
     .btn2{
         display: none;
     }
+    
+    .product-name,.section-2_product_name,.section-2_product_price,.product-price{
+        font-size: 0.8rem;
+    }
+   
 }
 
 @media (min-width:250px) and (max-width:426px) {

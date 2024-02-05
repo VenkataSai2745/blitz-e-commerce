@@ -23,7 +23,7 @@
     display: flex;
 }
 
-.logo {
+/* .logo {
     width: 300px;
     height: 100px;
 }
@@ -32,7 +32,7 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-}
+} */
 
 .section-1,
 .section-2 {
@@ -138,15 +138,17 @@ p {
     }
     .logo {
         position: absolute;
-        top: 10rem;
+        top: 10vmin;
         width: 10rem;
         height: 6rem;
     }
 
-    .logo-img {
+    /* .logo-img {
+        object-fit: cover;
         width: 100%;
-    }
-
+        height: 100%;
+    } */
+    
 }
 @media (min-width:600px) and (max-width:1100px) {
     .inner-container{
@@ -155,11 +157,12 @@ p {
     .login{
         width:90%;
     }
-    .logo{
-        position: absolute;
-        top: 8rem;
-        width: 10rem;
-    }
+    /* .logo{
+        top: 8vmin;
+        width: 30%;
+        height: 20%;
+        border: 2px solid black;
+    } */
     .login-btn,.signup-btn{
         padding: 0.6rem 1.5rem;
         border-radius:0.5rem;
@@ -169,6 +172,12 @@ p {
     input[type="password"] {
         width: 90%;
     }
+    /* .logo-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    } */
+    
 }
 @media (min-width:1100px)  {
     .inner-container{
@@ -176,12 +185,15 @@ p {
     }
     .login{
         width:90%;
+        line-height: 4rem;
     }
-    .logo{
+    /* .logo{
         position: absolute;
-        top: 8rem;
-        width: 10rem;
-    }
+        top: 13vmin;
+        width: 12rem;
+        height: 12rem;
+        padding: 0;
+    } */
     .login-btn,.signup-btn{
         padding: 0.6rem 1.5rem;
         border-radius:0.5rem;
@@ -191,4 +203,10 @@ p {
     input[type="password"] {
         width: 90%;
     }
+    /* .logo-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+     */
 }
