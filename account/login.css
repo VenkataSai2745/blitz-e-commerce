@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(250deg, #00E1FA, #28225D);
+}
+
+.inner-container {
+    width: 70%;
+    background-color: white;
+    height: 70%;
+    border: 0.125rem solid black;
+    border-radius: 0.7rem;
+    display: flex;
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+}
+
+.logo-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.section-1,
+.section-2 {
+    width: 50%;
+    height: 100%;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    /* line-height: 4rem; */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 1rem;
+    width: 20rem;
+    height: 1rem;
+    margin: 1rem;
+    text-transform: none;
+    font-weight: 400;
+    border: none;
+    border-bottom: 0.18rem solid transparent;
+    border-image: linear-gradient(to left, rgb(194, 34, 175), rgb(121, 88, 121));
+    border-image-slice: 1;
+    outline: none;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+.login-btn,
+.signup-btn {
+    font-weight: 600;
+    padding: 1rem 3rem;
+    background-color: cyan;
+    border: none;
+    cursor: pointer;
+}
+
+p {
+    padding-left: 1rem;
+    margin-top: 1rem;
+}
+
+.signup-btn a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.section-2 img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 100%;
+    }
+
+    .inner-container {
+        width: 90%;
+        height: 60%;
+        padding-top: 3rem;
+    }
+
+    .section-2 {
+        display: none;
+    }
+
+    .section-1 {
+        width: 100%;
+    }
+
+    .login {
+        width: 100%;
+        /* line-height: 3rem */
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 80%;
+    }
+
+    .login-btn,
+    .signup-btn {
+        padding: 0.6rem 1.5rem;
+        border-radius: 1rem;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    .logo {
+        position: absolute;
+        top: 10rem;
+        width: 10rem;
+        height: 6rem;
+    }
+
+    .logo-img {
+        width: 100%;
+    }
+
+}
+@media (min-width:600px) and (max-width:1100px) {
+    .inner-container{
+        width: 80%;
+    }
+    .login{
+        width:90%;
+    }
+    .logo{
+        position: absolute;
+        top: 8rem;
+        width: 10rem;
+    }
+    .login-btn,.signup-btn{
+        padding: 0.6rem 1.5rem;
+        border-radius:0.5rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 90%;
+    }
+}
+@media (min-width:1100px)  {
+    .inner-container{
+        width: 80%;
+    }
+    .login{
+        width:90%;
+    }
+    .logo{
+        position: absolute;
+        top: 8rem;
+        width: 10rem;
+    }
+    .login-btn,.signup-btn{
+        padding: 0.6rem 1.5rem;
+        border-radius:0.5rem;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 90%;
+    }
+}
