@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Blitz signup</title>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="inner-container">
+            <h1>Create Account</h1>
+            <form action="#" method="post">
+                <div>
+
+                    <label for="Username">User Name</label><br> 
+                    <input type="text" name="username" id="Username" placeholder="Enter your Username"  required>
+                </div>
+                <div >
+
+                    <label for="email"> Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your email"  required>
+                </div>
+                <div >
+                    <label for="password">Password</label><br>
+                    <input type="password" name="password" id="password" placeholder="Create Your Password" minlength="8" required>
+                </div>
+                <div>
+                    <label for="cnfpassword">Conform Password</label><br>
+                    <input type="password" name="cnfpassword" id="cnfpassword" placeholder="Confirm your password"minlength="8" required>
+                </div>
+                <div>
+
+                    <button type="submit">Signup</button>
+                    <button type="submit"><a href="/account/login.html">Log in</a></button>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
