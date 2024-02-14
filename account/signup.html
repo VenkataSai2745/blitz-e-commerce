@@ -2,42 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="signup.css">
-    <title>Blitz signup</title>
+    <title>Sign up | Blitz</title>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/account/signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="outer-container">
-        <div class="inner-container">
-            <h1>Create Account</h1>
-            <form action="#" method="post">
-                <div>
-
-                    <label for="Username">User Name</label><br> 
-                    <input type="text" name="username" id="Username" placeholder="Enter your Username"  required>
-                </div>
-                <div >
-
-                    <label for="email"> Email</label><br>
-                    <input type="email" name="email" id="email" placeholder="Enter your email"  required>
-                </div>
-                <div >
-                    <label for="password">Password</label><br>
-                    <input type="password" name="password" id="password" placeholder="Create Your Password" minlength="8" required>
-                </div>
-                <div>
-                    <label for="cnfpassword">Confirm Password</label><br>
-                    <input type="password" name="cnfpassword" id="cnfpassword" placeholder="Confirm your password"minlength="8" required>
-                </div>
-                <div>
-
-                    <button type="submit">Signup</button>
-                    <button type="submit"><a href="/account/login.html">Log in</a></button>
-                </div>
-            
-            </form>
+    <main class="card-container slideUp-animation">
+        <div class="image-container">
+            <h1 class="company"><a href="/Index.html"><i class="fa-solid fa-bolt fa-xs" style="color: #FFD43B;"></i> Blitz</a></h1>
+            <img src="/assets/account/signup2.jpeg" class="illustration" alt="">
+            <p class="quote">Sign up today to get exciting offers..!</p>
+            <a href="#btm" class="mobile-btm-nav">
+                <img src="/assets/account/dbl-arrow.png" alt="">
+            </a>
         </div>
-    </div>
-    
+        <form action="/server" method="post">
+            <div class="form-container slideRight-animation">
+
+                <h1 class="form-header">
+                    Sign up now
+
+                    </h1>
+
+                <div class="input-container">
+                    <label for="f-name"></label>
+                    <input type="text" name="f-name" id="f-name" required>
+                    <span>First name</span>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-container">
+                    <label for="l-name"></label>
+                    <input type="text" name="l-name" id="l-name" required>
+                    <span>Last name</span>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-container">
+                    <label for="mail"></label>
+                    <input type="email" name="mail" id="mail" required>
+                    <span>E-mail</span>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-container">
+                    <label for="phone"></label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <span>Phone</span>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-container">
+                    <label for="user-password"></label>
+                    <input type="password" name="user-password" id="user-password" class="user-password" required>
+                    <span>Password</span>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-container">
+                    <label for="user-password-confirm"></label>
+                    <input type="password" name="user-password-confirm" id="user-password-confirm" class="password-confirmation" required>
+                    <span>Confirm Password</span>
+                    <div class="error"></div>
+                </div>
+
+                <div id="btm">
+                    <button type="submit" class="submit-btn">Create Account</button>
+                    <p class="btm-text">
+                        Already have an account..? <span class="btm-text-highlighted login-sec"><a href="/account/login.html">Log in</a></span>
+                    </p>
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
